@@ -55,7 +55,7 @@ public class AdapterClass extends RecyclerView.Adapter<AdapterClass.userHolder> 
             fname=itemView.findViewById(R.id.displayname);
             mail=itemView.findViewById(R.id.displayemail);
             mobile=itemView.findViewById(R.id.displaycontact);
-            count=itemView.findViewById(R.id.countno);
+            count=itemView.findViewById(R.id.TotalCount);
         }
     }
 }

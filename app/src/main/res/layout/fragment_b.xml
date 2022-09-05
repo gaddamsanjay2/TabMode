@@ -5,8 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#1D9C27B0"
-    android:layout_gravity="center_horizontal"
-
     tools:context=".FragmentB">
 
     <!--    <androidx.cardview.widget.CardView-->
@@ -20,11 +18,8 @@
         >
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/bg_colour"
-        android:layout_gravity="center"
-        >
+        android:layout_height="match_parent"
+        android:orientation="vertical">
         <!-- TODO: Update blank fragment layout -->
         <TextView
             android:layout_width="match_parent"
@@ -32,143 +27,141 @@
             android:text="Employee Detailed Information"
             android:textSize="30sp"
             android:textStyle="bold"
-            android:textColor="#F44336"
-            android:gravity="center"
+            android:textColor="#2196F3"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             />
 
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:weightSum="2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:layout_margin="10dp"
-            android:weightSum="2"
-
-            android:layout_gravity="center_horizontal">
+            android:layout_weight="1"
+            android:weightSum="3"
+            >
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:layout_weight="0.5"
                 android:layout_margin="10dp"
-                android:hint="Firstname"
+                android:text="Firstname"
                 android:textSize="15sp"/>
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/fnamedispid"
                 android:layout_weight="0.5"
                 android:layout_margin="10dp"
-
+                android:background="#DCD7D7"
                 android:textSize="15sp"/>
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Last Name"
+                android:text="Last Name"
                 android:layout_weight="0.5"
                 android:layout_margin="10dp"
-
                 android:textSize="15sp"/>
 
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:layout_weight="0.5"
                 android:layout_margin="10dp"
                 android:id="@+id/lnamedispid"
-                android:textSize="15sp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="10dp"
-            android:weightSum="2"
-            android:layout_gravity="center_horizontal">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:layout_weight="0.5"
-                android:layout_margin="10dp"
-                android:hint="Mail"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/maildispid"
-                android:layout_weight="0.5"
-                android:layout_margin="10dp"
-
-
-                android:textSize="20sp"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:hint="Mobile"
-                android:layout_weight="0.5"
-                android:layout_margin="10dp"
-
-                android:textSize="20sp"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:layout_weight="0.5"
-                android:layout_margin="10dp"
-                android:id="@+id/mobiledispid"
-                android:textSize="15sp"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="10dp"
-            android:weightSum="2"
-            android:layout_gravity="center_horizontal">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:layout_weight="0.5"
-                android:layout_margin="10dp"
-                android:hint="Designation"
-
+                android:background="#DCD7D7"
                 android:textSize="15sp"/>
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Designation"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:textSize="15sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
                 android:id="@+id/desgdispid"
-                android:layout_weight="0.5"
-                android:layout_margin="10dp"
-
-
-                android:textSize="15sp"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:hint="Date of Joining"
-                android:layout_weight="0.5"
-                android:layout_margin="10dp"
-
-                android:textSize="15sp"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-
-                android:layout_weight="0.5"
-                android:layout_margin="10dp"
-                android:id="@+id/dojdispid"
+                android:background="#DCD7D7"
                 android:textSize="15sp"/>
 
         </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:text="Mail"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/maildispid"
+                    android:layout_weight="0.5"
+                    android:background="#DCD7D7"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:id="@+id/mobiledispid"
+                    android:background="#DCD7D7"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Joining"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:textSize="15sp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:id="@+id/dojdispid"
+                    android:background="#DCD7D7"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
     </LinearLayout>
     </ScrollView>
 </androidx.cardview.widget.CardView>
